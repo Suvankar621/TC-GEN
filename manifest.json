@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "User Action Tracker",
+  "version": "1.0",
+  "icons": {
+    "128":"images/icon128.png",
+    "48": "images/icon48.png",
+    "16":"images/icon16.png"
+  },
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+  {
+    "resources": ["https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.6/xlsx.full.min.js"],
+    "matches": ["<all_urls>"]
+  }
+]
+}

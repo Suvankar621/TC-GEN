@@ -1,0 +1,94 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  width: 700px;
+  height: 515px;
+  overflow: hidden;
+}
+.step {
+  width: 670px;
+  background-color: rgb(218, 218, 218);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.step-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.step-content {
+  font-size: 14px;
+}
+#download-btn {
+  margin-top: 1vmax;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2vmax;
+}
+#download-btn:hover {
+  background-color: #0056b3;
+}
+#startRecording {
+  width: 17vmax;
+  margin-bottom: 2vmax;
+  padding: 1.3vmax;
+  border: 1px solid grey;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 1px 3px 5px #000000e3;
+}
+#stopRecording,
+#clearStorage {
+    margin-top: 2vmax;
+  width: 17vmax;
+  margin-bottom: 2vmax;
+  margin-left: 1vmax;
+  padding: 1.3vmax;
+  border: 1px solid grey;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 1px 3px 5px #4a4a4ae3;
+}
+#startRecording:active {
+  scale: 0.9;
+}
+#stopRecording:active {
+  scale: 0.9;
+}
+#clearStorage:active {
+  scale: 0.9;
+}
+
+#minimize-btn {
+  margin-left: 1vmax;
+  border: none;
+  border-radius: 50%;
+  padding: 1vmax;
+  width: 5vmax;
+  height: 5vmax;
+  background-color: rgb(179, 2, 2);
+  color: white;
+  cursor: pointer;
+}
+#minimize-btn:active {
+  scale: 0.9;
+}
+
+#title img {
+  margin-bottom: -2vmax;
+  margin-right: 1vmax;
+}
+
+#steps-container{
+    width: 700px;
+    height: 353px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
